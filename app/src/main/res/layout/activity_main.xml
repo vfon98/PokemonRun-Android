@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:text="100"
+            android:textColor="#f00"
+            android:textSize="50sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pokemon_logo" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <CheckBox
+            android:id="@+id/ckb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp" />
+
+        <CheckBox
+            android:id="@+id/ckb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ckb1"
+            android:layout_marginBottom="40dp" />
+
+        <CheckBox
+            android:id="@+id/ckb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ckb2"
+            android:layout_marginBottom="40dp" />
+
+        <SeekBar
+            android:id="@+id/sb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/ckb1"
+            android:progress="5"
+            android:progressDrawable="@android:color/transparent"
+            android:thumb="@drawable/ibu2" />
+
+        <SeekBar
+            android:id="@+id/sb2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_above="@id/sb1"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/ckb2"
+            android:progress="5"
+            android:progressDrawable="@android:color/transparent"
+            android:thumb="@drawable/pikachu75" />
+
+        <SeekBar
+            android:id="@+id/sb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/sb2"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/ckb3"
+            android:progress="5"
+            android:progressDrawable="@android:color/transparent"
+            android:thumb="@drawable/casau2" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
