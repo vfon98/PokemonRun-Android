@@ -137,20 +137,21 @@ public class MainActivity extends AppCompatActivity {
             updateScore(cb1);
 
         }
-        if (sb2.getProgress() >= maxProgress - 10) {
+        else if (sb2.getProgress() >= maxProgress - 10) {
             timer.cancel();
             Toast.makeText(this, "Pikachu Win !", Toast.LENGTH_SHORT).show();
             btn.setVisibility(View.VISIBLE);
             enableComponent();
             updateScore(cb2);
         }
-        if (sb3.getProgress() >= maxProgress - 10) {
+        else if (sb3.getProgress() >= maxProgress - 10) {
             timer.cancel();
             Toast.makeText(this, "Crocodile Win !", Toast.LENGTH_SHORT).show();
             btn.setVisibility(View.VISIBLE);
             enableComponent();
             updateScore(cb3);
         }
+        else {}
     }
 
     void resetRace() {
